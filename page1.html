@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Display a map</title>
+    <title>Data Analysis</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
     <script src='./female3000.js'></script>
@@ -12,8 +12,14 @@
         #map { position:absolute; top:0; bottom:0; width:50%; }
     </style>
 </head>
+   <link rel="stylesheet" type="text/css" href="style.css"/>
 <body>
-
+ <div class="topnav" id="myTopnav">
+ <a href="index.html">The Story</a>
+ <a href="page1.html">Analysis</a>
+<a href="page2.html">Reference</a> 
+     
+<p>
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RldmVuam15IiwiYSI6ImNqbG0xZzdhczEzcDEza281ajV6YXR2djMifQ.lsTXrW6arMzrjZhRHsgfnA';
@@ -53,6 +59,7 @@ map.addLayer({
 });
 });
 </script>
+     </p>
 
 </body>
 </html>
